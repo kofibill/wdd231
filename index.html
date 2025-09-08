@@ -1,11 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Creating a responsive course home page.">
+    <meta name="author" content="William Nyemasem Osiakwan">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Frontend Development">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <title>Course Home Page</title>
 </head>
 <body>
-    
+    <header>
+        <span>William Nyemasem Osiakwan</span>
+        <img src="images/education-svgrepo-com.svg" alt="Educational Cap">
+        <button class="button"></button>
+    </header> 
+    <nav>
+        <ul class="links">
+            <li><a href="">Home</a></li>
+            <li><a href="">Chamber Project</a></li>
+            <li><a href="">Final Project</a></li>
+        </ul>
+    </nav>   
+    <main>
+        <h1>Home</h1>
+        <section class="card1">
+            <h2>About me</h2>
+            <p>My name is William Nyemasem Osiakwan. I come from Ghana and live in the city of Accra. I am a member
+            of The Church Of Jesus Christ Of Latter Day Saints and a returned missionary. I served my mission in the Nigeria
+            Calabar/Uyo mission from 2018-2020. I had lots of experinces on my missionary service.
+            I am a student of Brigham Young University-Idaho and I am currently learning Frontend Development with the goal of becoming a
+            professional Frontend Developer. I am excited about the opportunities that this course will provide and look forward to
+            learning new skills and techniques in web development.
+            </p>
+        </section>
+        <section class="card2">
+            <h2>Student Photo</h2>
+            <img src="images/studentphoto.jpg" alt="Student Photo" width="200" height="200">
+        </section>
+        <section class="card3">
+            <h2>Web Certification Course</h2>
+            <button type="button">All</button>
+            <button type="button">CSE</button>
+            <button type="button">WDD</button>
+            <div>
+                <p>WDD130</p>
+            </div>
+            <div>
+                <p>WDD131</p>
+            </div>
+            <div>
+                <p>WDD231</p>
+            </div>
+            <p class="listedcourses">The total number of course listed above is 6 </p>
+        </section>
+    </main>
+    <footer>
+        <div class="social-links">
+            <a href=#><img src="images/facebook-svgrepo-com.svg" alt="Facebook Icon"></a>
+            <a href=https://www.linkedin.com/in/william-osiakwan-12531826b><img src="images/linkedin-svgrepo-com.svg" alt="LinkedIn Icon"></a>
+            <a href=https://github.com/kofibill/Wdd231><img src="images/github-svgrepo-com.svg" alt="Github Icon"></a>
+        </div>  
+        <p>&copy;<span id="currentyear"></span>| William Osiakwan | Accra, Ghana</p>
+        <p>This webpage was last modified on <span id="lastmodified"></span></p>
+    </footer>
 </body>
 </html>
