@@ -1,0 +1,49 @@
+*{
+margin:0;
+padding:0;
+font-family:Arial, sans-serif;
+}
+
+body{
+background:#f2f2f2;
+color:#333;
+}
+
+/* Header */
+
+header{
+display:flex;
+justify-content: space-between;
+background:#e5e5e5;
+padding: 5px;
+}
+.name{
+    padding-top: 50px;
+    
+}
+.hambutton::before {
+    content: '☰'
+}
+.hambutton.show::before{
+    content: 'X'
+}
+.hambutton{
+    padding: 10px;
+}
+nav{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    z-index: 1;
+}
+nav a{
+    display: none;
+    text-decoration: none;
+    text-align: center;
+}
+nav a:hover {
+    color: black;
+    cursor: pointer;
+    transition: 0.5s;
+    padding: 3px;
+}
