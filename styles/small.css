@@ -7,6 +7,7 @@ font-family:Arial, sans-serif;
 body{
 background:#f2f2f2;
 color:#333;
+width: 100%;
 }
 
 /* Header */
@@ -46,4 +47,19 @@ nav a:hover {
     cursor: pointer;
     transition: 0.5s;
     padding: 3px;
+}
+h1{
+    padding-left: 10px;
+}
+.card1{
+    padding: 10px;
+    border: 1px solid black;
+}
+.card1 h2{
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+card1 p{
+    padding: 10px;
 }
