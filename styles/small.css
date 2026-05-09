@@ -2,6 +2,8 @@
 margin:0;
 padding:0;
 font-family:Arial, sans-serif;
+outline: 1px solid black;
+box-sizing: border-box;
 }
 
 body{
@@ -13,53 +15,20 @@ width: 100%;
 /* Header */
 
 header{
-display:flex;
-justify-content: space-between;
-background:#e5e5e5;
-padding: 5px;
+display:grid;
+grid-template-columns: 24px auto 44px;
+column-gap: 8px;
 }
-.name{
-    padding-top: 50px;
-    
+
+.hambutton.hambutton::before {
+	content: "☰";
 }
-.hambutton::before {
-    content: '☰'
+
+.hambutton.open::before {
+	content: "❎";
 }
-.hambutton.show::before{
-    content: 'X'
-}
-.hambutton{
-    padding: 10px;
-}
-nav{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    z-index: 1;
-}
-nav a{
-    display: none;
-    text-decoration: none;
-    text-align: center;
-}
-nav a:hover {
-    color: black;
-    cursor: pointer;
-    transition: 0.5s;
-    padding: 3px;
-}
-h1{
-    padding-left: 10px;
-}
-.card1{
-    padding: 10px;
-    border: 1px solid black;
-}
-.card1 h2{
-    text-align: center;
-    background-color: black;
-    color: white;
-}
-card1 p{
-    padding: 10px;
+
+a{
+text-decoration:none;
+display: none;
 }
