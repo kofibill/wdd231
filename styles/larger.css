@@ -1,92 +1,35 @@
-body{
-font-family: Arial, sans-serif;
-margin:0;
-background:#eee;
+@media (min-width: 321px) {
+     *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    header{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 10px;
+        padding: 10px;
+    }
+    
+     body{
+        font-family: Arial, sans-serif;
+        margin:0;
+        background:white;
+    }
+
+     .links{
+        display: flex;
+        gap: 10px;
+    }
+     a{
+        text-decoration:none; 
+        display: block;
+    }
+     .hambutton{
+        display: none;
+    }
+
 }
 
-header{
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:10px 20px;
-background:white;
-}
-
-nav ul{
-display:flex;
-list-style:none;
-padding:0;
-}
-
-nav li{
-margin-right:20px;
-}
-
-nav a{
-text-decoration:none;
-color:black;
-}
-
-/* ABOUT SECTION */
-
-.about-section{
-display:grid;
-grid-template-columns: 2fr 1fr;
-gap:20px;
-padding:20px;
-}
-
-.about, .photo{
-background:#dcdcdc;
-padding:10px;
-}
-
-.photo img{
-width:100%;
-max-width:200px;
-display:block;
-margin:auto;
-}
-
-/* COURSES */
-
-.courses{
-padding:20px;
-}
-
-.filters{
-display:flex;
-gap:10px;
-margin-bottom:10px;
-}
-
-button{
-padding:8px 20px;
-border-radius:6px;
-border:1px solid #888;
-background:#ddd;
-}
-
-.course-list{
-display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:10px;
-}
-
-.course{
-background:#ccc;
-padding:10px;
-text-align:center;
-}
-
-footer{
-text-align:center;
-padding:20px;
-background:#ddd;
-margin-top:20px;
-}
-
-.social img{
-width:30px;
-margin:10px;
-}

@@ -7,8 +7,8 @@ box-sizing: border-box;
 }
 
 body{
-background:#f2f2f2;
-color:#333;
+background:white;
+color:black;
 width: 100%;
 padding: 10px;
 }
@@ -32,4 +32,36 @@ column-gap: 8px;
 a{
 text-decoration:none;
 display: none;
+}
+
+.card1{
+	padding-bottom: 20px;
+}
+.card1 h2{
+	background-color: black;
+	color: white;
+	text-align: center;
+}
+.card1 p{
+	padding: 10px;
+}
+
+.card2{
+padding-bottom: 20px;
+}
+.card2 h2{
+background-color: black;
+color: white;
+text-align: center;
+}
+.card2 img{
+	display: block;
+	padding: 10px;
+	margin: auto;
+}
+
+.card3 h2{
+background-color: black;
+color: white;
+text-align: center;
 }
