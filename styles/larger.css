@@ -158,6 +158,7 @@ main > h1 {
 }
 .photo-box img{
     margin: auto;
+    padding: 10px;
 }
 
 .photo-placeholder {
