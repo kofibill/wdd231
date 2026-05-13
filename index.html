@@ -1,76 +1,91 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Creating a responsive course home page.">
-    <meta name="author" content="William Nyemasem Osiakwan">
-    <meta name="keywords" content="HTML, CSS, JavaScript, Frontend Development">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/small.css">
-    <link rel="stylesheet" href="styles/larger.css">
-    <title>Course Home Page</title>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="keywords" content="HTML, CSS, JavaScript, Frontend Development">
+  <meta name="author" content="William Nyemasem Osiakwan"/>
+  <meta name="description" content="Creating a responsive homepage for William Nyemasem Osiakwan"/>
+  <script src="home.js" defer></script>
+  <link rel="stylesheet" href="styles/normalize.css"/>
+  <link rel="stylesheet" href="styles/small.css"/>
+  <link rel="stylesheet" href="styles/larger.css"/>
+  <title>Course Home Page</title>
 </head>
+
 <body>
-    <header>
-        <img class="logo" src="images/education-svgrepo-com.svg" alt="Educational Cap">
-        <span class="name">William Nyemasem Osiakwan</span>
-        <button class="hambutton"></button>
-    </header> 
-    <nav>
-        <ul class="links">
-            <li><a href="">Home</a></li>
-            <li><a href="">Chamber Project</a></li>
-            <li><a href="">Final Project</a></li>
-        </ul>
-    </nav>   
-    <main>
-        <h1>Home</h1>
+  <header>
+    <div class="header-inner">
+      <div class="logo">
+        <img src="images/education-svgrepo-com.svg" alt="Site logo" class="logo-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+        <div class="logo-placeholder" aria-hidden="true">✕</div>
+        <span class="site-name">William Nyemasem Osiakwan</span>
+      </div>
+      <button class="hamburger" id="hamburgerBtn" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainNav">&#9776;</button>
+    </div>
+    <nav id="mainNav" class="nav" aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html" class="active" aria-current="page">Home</a></li>
+        <li><a href="chamber.html">Chamber Project</a></li>
+        <li><a href="final.html">Final Project</a></li>
+      </ul>
+    </nav>
+  </header>
 
-        <section class="card1">
-            <h2>About me</h2>
-            <p>My name is William Nyemasem Osiakwan. I come from Ghana and live in the city of Accra. I am a member
-            of The Church Of Jesus Christ Of Latter Day Saints and a returned missionary. I served my mission in the Nigeria
-            Calabar/Uyo mission from 2018-2020. I had lots of experinces on my missionary service.
-            I am a student of Brigham Young University-Idaho and I am currently learning Frontend Development with the goal of becoming a
-            professional Frontend Developer. I am excited about the opportunities that this course will provide and look forward to
-            learning new skills and techniques in web development.
-            </p>
-        </section>
+  <main>
+    <h1>Home</h1>
 
-        <section class="card2">
-            <h2>Student Photo</h2>
-            <img src="images/studentphoto.jpg" alt="Student Photo" width="200" height="200">
-        </section>
+    <section class="about-photo-grid">
+      <div class="about-box">
+        <h2>About Me</h2>
+        <p>
+          My name is William Nyemasem Osiakwan. I come from Ghana and live in the city of Accra. I am a member
+          of The Church Of Jesus Christ Of Latter Day Saints and a returned missionary. I served my mission in the Nigeria
+          Calabar/Uyo mission from 2018-2020. I had lots of experinces on my missionary service.
+          I am a student of Brigham Young University-Idaho and I am currently learning Frontend Development with the goal of becoming a
+          professional Frontend Developer. I am excited about the opportunities that this course will provide and look forward to
+          learning new skills and techniques in web development.
+        </p>
+      </div>
+      <div class="photo-box">
+        <h2>Student Photo</h2>
+        <div class="photo-placeholder" role="img" aria-label="Student photo placeholder"></div>
+      </div>
+    </section>
 
-        <section class="card3">
-            <h2>Web Certification Course</h2>
-            <button type="button">All</button>
-            <button type="button">CSE</button>
-            <button type="button">WDD</button>
-            <div>
-                <p>WDD130</p>
-            </div>
-            <div>
-                <p>WDD131</p>
-            </div>
-            <div>
-                <p>WDD231</p>
-            </div>
-            <p class="listedcourses">The total number of course listed above is 6 </p>
-        </section>
-    </main>
-    <footer>
-        <div class="social-links">
-            <a href=#><img src="images/facebook-svgrepo-com.svg" alt="Facebook Icon"></a>
-            <a href=https://www.linkedin.com/in/william-osiakwan-12531826b><img src="images/linkedin-svgrepo-com.svg" alt="LinkedIn Icon"></a>
-            <a href=https://github.com/kofibill/Wdd231><img src="images/github-svgrepo-com.svg" alt="Github Icon"></a>
-        </div>  
-        <p>&copy;<span id="currentyear"></span>| William Osiakwan | Accra, Ghana</p>
-        <p>This webpage was last modified on <span id="lastmodified"></span></p>
-    </footer>
+    <section class="courses-section" aria-labelledby="coursesHeading">
+      <h2 id="coursesHeading">Web Certificate Courses</h2>
+      <div class="filter-buttons" role="group" aria-label="Filter courses by category">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="cse">CSE</button>
+        <button class="filter-btn" data-filter="wdd">WDD</button>
+      </div>
+      <div class="course-list" id="courseList">
+        <div class="course-card" data-category="wdd">WDD 130</div>
+        <div class="course-card" data-category="wdd">WDD 131</div>
+        <div class="course-card" data-category="wdd">WDD 231</div>
+      </div>
+      <p class="credit-total" id="creditTotal">The total credits for course listed above is 6</p>
+    </section>
+
+    <section class="social-section" aria-label="Social media links">
+      <a href="images/linkedin-svgrepo-com.svg" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+        <svg viewBox="0 0 24 24" width="36" height="36" aria-hidden="true" focusable="false"><path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.27c-.97 0-1.75-.79-1.75-1.76s.78-1.76 1.75-1.76 1.75.79 1.75 1.76-.78 1.76-1.75 1.76zm13.5 11.27h-3v-5.6c0-1.34-.03-3.07-1.87-3.07-1.87 0-2.16 1.46-2.16 2.97v5.7h-3v-10h2.88v1.37h.04c.4-.76 1.38-1.56 2.84-1.56 3.04 0 3.6 2 3.6 4.59v5.6z"/></svg>
+      </a>
+      <a href="images/github-svgrepo-com.svg" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+        <svg viewBox="0 0 24 24" width="36" height="36" aria-hidden="true" focusable="false"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3。44 
+
+      <a href="https://x.com" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)">
+        <svg viewBox="0 0 24 24" width="36" height="36" aria-hidden="true" focusable="false"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.747l7.73-8.835L1.254 2.25H8.08l4.259 5.632 5.905-5.632zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+      </a>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 202X &bull; William Nyemasem Osiakwan &bull; Accra, Ghana</p>
+    <p>Last Modification: <span id="lastModified"></span></p>
+  </footer>
+
+  
 </body>
 </html>
