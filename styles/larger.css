@@ -155,8 +155,7 @@ main > h1 {
 
 .photo-box {
   display: flex;
-  flex-direction: column;
-  align-items: stretch;
+  justify-content: center;
 }
 
 .photo-placeholder {
