@@ -1,6 +1,6 @@
 /* ===== Responsive – Mobile ===== */
 @media (max-width: 640px) {
-  .hamburger {
+  #hamburgerBtn {
     display: block;
   }
 
@@ -12,7 +12,7 @@
     display: block;
   }
 
-  .nav ul {
+  #mainNav ul {
     flex-direction: column;
   }
 
@@ -24,16 +24,20 @@
 
   /* Stack about + photo vertically */
   .about-photo-grid {
-    grid-template-columns: 1fr;
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    grid-template-rows: auto auto;
   }
 
   .about-box {
     border-right: none;
     border-bottom: 1px solid var(--border);
+    width: 100%;
   }
 
   .photo-placeholder {
     min-height: 200px;
+    width: 100%;
   }
 
   /* Courses: single column filters, 3-col cards stay */
