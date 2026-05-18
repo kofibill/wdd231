@@ -10,8 +10,11 @@
     <meta property="og:description" content="Find local businesses and services in the Chamber of Commerce directory">
     <meta property="og:image" content="images/directory.jpg">
     <meta property="og:url" content="directory.html">
+    <scripts src="scripts/directory.js" defer></script>
     <link rel="icon" href="images/business-corporate-us-dollar-logo-design-usa-vector-28122193.avif" type="image/x-icon">
-    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="styles/dictsmall.css">
+    <link rel="stylesheet" href="styles/dictlarge.css">
     <title>Directory Page</title>
 </head>
 <body>
@@ -40,10 +43,36 @@
             </p>
         </div>
         
-        <div class="menu">
-		    <button id="grid">Grid</button>
-		    <button id="list">List</button>
+        <div class="directory-controls">
+		    <button id="gridBtn" class="active">🎚️ Grid View</button>
+		    <button id="listBtn">📝List View</button>
 	    </div>
+
+        <!-- The class defaults to 'grid' layout -->
+        <article id="memberContainer" class="grid-view"></article>
     </main>
+
+    <footer>
+        <div class="company-info">
+            <p>&copy; 2026 Adenta City Chamber of Commerce.
+                NO 10, Adenta New Town, Accra, Ghana.
+                info@adentachamber.com
+                +233 30 123 4567
+                All rights reserved.
+            </p>
+        </div>
+
+        <div class="social-media">
+            <a href="https://www.facebook.com/adentachamber" target="_blank" aria-label="Facebook"><img src="images/facebook-svgrepo-com.svg" alt="Facebook"></a>
+            <a href="https://www.twitter.com/adentachamber" target="_blank" aria-label="Twitter"><img src="images/X--Streamline-Simple-Icons.svg" alt="Twitter"></a>
+            <a href="https://www.linkedin.com/company/adentachamber" target="_blank" aria-label="LinkedIn"><img src="images/linkedin-svgrepo-com.svg" alt="LinkedIn"></a>
+        </div>
+
+        <div class="student-info">
+            <p>WDD 231 Class Project | William Nyemasem Osiakwan</p>
+            <p>&copy; 2026 Adenta City Chamber of Commerce</p>
+            <p>This page was last modified on <span id="lastModified"></span></p>
+        </div>
+    </footer>
 </body>
 </html>

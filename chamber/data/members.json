@@ -1,0 +1,102 @@
+[
+    {
+        "name": "HallMark Frights and Consultancy GH. Ltd.",
+        "address": "4th Floor, Allied Heights, Olusegun Obasanjo Highway, Abelemkpe, Accra, Ghana",
+        "phone": "+233 (0) 30 225 9908",
+        "website": "https://hallmarkfreightgh.org/",
+        "image": "images/hallmark.png",
+        "membershipLevel": 1,
+        "established": 2018,
+        "tagline": "Your Trusted and Reliable Freight Forwarder."
+    },
+    {
+        "name": "MTN GHANA",
+        "address": "MTN House, No. 69, Independence Avenue, Accra, Ghana",
+        "phone": "+233 (0) 30 5556317",
+        "website": "https://www.mtn.com.gh/",
+        "image": "images/mtn.webp",
+        "membershipLevel": 2,
+        "established": 1994,
+        "tagline": "What are we doing today?"
+    },
+    {
+        "name": "Ghana National Gas Company (GNGC)",
+        "address": "GNGC Building, No. 1, Liberation Road, Airport Residential Area, Accra, Ghana",
+        "phone": "+233 (0) 30 266 6200",
+        "website": "https://www.gngcgh.com/",
+        "image": "images/gngc.png",
+        "membershipLevel": 3,
+        "established": 2000,
+        "tagline": "Delivering Gas for a Sustainable Future."
+    },
+    {
+        "name": "The Buka Resturant and Lounge",
+        "address": "10th Street, Osu, Accra, Ghana",
+        "phone": "+233 55 649 2290",
+        "website": "https://www.bukarestaurant.com/",
+        "image": "images/buka.jpg",
+        "membershipLevel": 2,
+        "established": 2011,
+        "tagline": "\"Taste of Africa\" (Celebrating traditional West African cuisine)"
+    },
+    {
+        "name": "Ecobank Ghana Limited",
+        "address": "2 Morocco Lane, Off Independence Avenue, Ministerial Area, Accra",
+        "phone": "+233 30 221 3999",
+        "website": "https://www.ecobank.com/ghana",
+        "image": "images/ecobank.jpg",
+        "membershipLevel": 3,
+        "established": 2011,
+        "tagline": "A Better Way | A Better Africa"
+    },
+    {
+        "name": "Hubtel Ghana Limited",
+        "address": "20 Aluguntugui Street, East Legon, Accra",
+        "phone": "+233 30 221 1611",
+        "website": "https://hubtel.com/",
+        "image": "images/hubtel.webp",
+        "membershipLevel": 1,
+        "established": 2018,
+        "tagline": "Connecting Businesses to Communities"
+    },
+    {
+        "name": "Accra Brewery Limited",
+        "address": "Graphic Road, South Industrial Area, Accra, Ghana",
+        "phone": "+233 30 268 8851",
+        "website": "https://accrabrewery.com.gh/",
+        "image": "images/accrabrewery.png",
+        "membershipLevel": 2,
+        "established": 1983,
+        "tagline": "Bringing people together for a better world"
+    },
+    {
+        "name": "Pizzaman Chickenman Ghana Limited",
+        "address": "Kojo Thompson Road, Adabraka, Accra, Ghana",
+        "phone": "+233 30 275 3333",
+        "website": "https://www.pizzamanchickenman.com/",
+        "image": "images/pizzaman.png",
+        "membershipLevel": 3,
+        "established": 2011,
+        "tagline": "Serving delicious chicken and pizza with a smile."
+    },
+    {
+        "name": "Stanbic Bank Ghana Limited",
+        "address": "Stanbic Heights, 215 South Liberation Link, Airport City, Accra, Ghana",
+        "phone": "+233 30 281 5789",
+        "website": "https://www.stanbicbank.com/ghana",
+        "image": "images/stanbic.jpg",
+        "membershipLevel": 2,
+        "established": 1983,
+        "tagline": "Ghana is our home, we drive her growth"
+    },
+    {
+        "name": "Gold Fields Ghana Limited",
+        "address": "No. 7 Dr. Amilcar Cabral Road, Airport Residential Area, Accra, Ghana",
+        "phone": "++233 30 277 0100",
+        "website": "https://www.goldfields.com/ghana",
+        "image": "images/gold.webp",
+        "membershipLevel": 3,
+        "established": 2011,
+        "tagline": "Creating Enduring Value Beyond Mining"
+    }
+]
