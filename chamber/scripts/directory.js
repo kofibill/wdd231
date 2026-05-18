@@ -1,3 +1,6 @@
+//Last Modified
+let today = document.getElementById("lastModified").textContent = new Date();
+
 const url = "./data/members.json";
 const container = document.querySelector("#memberContainer");
 const gridBtn = document.querySelector("#gridBtn");
