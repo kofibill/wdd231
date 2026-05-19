@@ -2,7 +2,7 @@
 let today = document.getElementById("lastModified").textContent = new Date();
 
 
-
+// Variables for directory
 const url = "./data/members.json";
 const container = document.querySelector("#memberContainer");
 const gridBtn = document.querySelector("#gridBtn");
@@ -36,19 +36,28 @@ function displayMembers(members) {
     const levelText = levels[member.membershipLevel] || "General";
 
     card.innerHTML = `
-      <img src="images/${member.image}" alt="${member.name} logo" loading="lazy">
-      <h3>${member.name}</h3>
+    <div class="card-img-wrap">
+      <img src="images/${member.image}" alt="${member.name} logo" loading="lazy" style="max-width: 100%; height: auto; display: block;">
+      <h4>${member.name}</h4>
       <p class="tagline"><em>"${member.tagline}"</em></p>
       <hr>
       <p><strong>Address:</strong> ${member.address}</p>
       <p><strong>Phone:</strong> ${member.phone}</p>
       <p><a href="${member.website}" target="_blank" rel="noopener">Visit Website</a></p>
       <span class="badge level-${member.membershipLevel}">${levelText} Member</span>
+    </div>
     `;
-    
+
     container.appendChild(card);
   });
 }
+const hamburgerBtn = document.querySelector("#hamburgerBtn");
+const mainNav = document.querySelector("#mainNav");
+hamburgerBtn.addEventListener('click', () => {
+	mainNav.classList.toggle('open');
+	hamburgerBtn.classList.toggle('open');
+});
+
 
 // View toggle event listeners
 gridBtn.addEventListener("click", () => {
@@ -65,3 +74,5 @@ listBtn.addEventListener("click", () => {
 
 // Initialize fetch operation
 getMemberData();
+
+

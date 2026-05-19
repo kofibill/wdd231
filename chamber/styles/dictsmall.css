@@ -30,11 +30,26 @@ nav{
     font-size: 1.5rem;
     cursor: pointer;
 }
-.hamburger::before{
+#hamburgerBtn::before{
     content: "☰";
 }
-.hamburger.active::before{
+#hamburgerBtn.open::before{
     content: "✖";
+}
+nav.navigation.open {
+    display: block;
+    position: absolute;
+    top: 70px; /* Adjust based on your header height */
+    left: 0;
+    width: 100%;
+    background-color: #333; /* Background for mobile menu */
+    z-index: 1000;
+}
+
+/* Ensure the links inside the open menu are visible */
+nav.navigation.open a {
+    display: block;
+    border-bottom: 1px solid #444;
 }
 .navigation a{
     display: none;
@@ -91,7 +106,17 @@ nav{
 
 /* Adapt styling depending on parent container state */
 .grid-view .member-card {
-  text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    box-sizing: border-box;
+}
+.grid-view .member-card img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    display: block;
 }
 
 .list-view .member-card {
@@ -103,7 +128,7 @@ nav{
 
 .list-view .member-card img, 
 .list-view .member-card hr {
-  display: none; /* Hide logos and lines in clean list rows */
+  display: none !important; /* Hide logos and lines in clean list rows */
 }
 
 /* Control buttons style */
