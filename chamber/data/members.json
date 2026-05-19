@@ -4,7 +4,7 @@
         "address": "4th Floor, Allied Heights, Olusegun Obasanjo Highway, Abelemkpe, Accra, Ghana",
         "phone": "+233 (0) 30 225 9908",
         "website": "https://hallmarkfreightgh.org/",
-        "image": "images/hallmark.png",
+        "image": "images/hallmark.jpeg",
         "membershipLevel": 1,
         "established": 2018,
         "tagline": "Your Trusted and Reliable Freight Forwarder."
@@ -14,7 +14,7 @@
         "address": "MTN House, No. 69, Independence Avenue, Accra, Ghana",
         "phone": "+233 (0) 30 5556317",
         "website": "https://www.mtn.com.gh/",
-        "image": "images/mtn.webp",
+        "image": "/images/mtn.webp",
         "membershipLevel": 2,
         "established": 1994,
         "tagline": "What are we doing today?"

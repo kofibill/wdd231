@@ -1,6 +1,8 @@
 //Last Modified
 let today = document.getElementById("lastModified").textContent = new Date();
 
+
+
 const url = "./data/members.json";
 const container = document.querySelector("#memberContainer");
 const gridBtn = document.querySelector("#gridBtn");
@@ -30,7 +32,7 @@ function displayMembers(members) {
     card.className = "member-card";
 
     // Convert membership numeric levels to text labels
-    const levels = { 1: "Member", 2: "Silver", 3: "Gold" };
+    const levels = { 1: "Bronze", 2: "Silver", 3: "Gold" };
     const levelText = levels[member.membershipLevel] || "General";
 
     card.innerHTML = `

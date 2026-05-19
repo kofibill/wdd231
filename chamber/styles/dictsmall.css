@@ -6,22 +6,20 @@
 }
 
 header{
-    display: grid;
-    grid-template-columns: 24px auto 44px;
-    padding: 5px 0 5px 10px;
-    gap: 5px;
-    border: 1px solid #000;
-    align-items: end;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+    border: 1px solid #ddd;
 }
 header img{
-    display: block;
-    width: 100%;
-    height: auto;
+    width: 40px;
+    height: 40px;
 }
 header span{
     font-size: 1.2rem;
     font-weight: bold;
     color: #000;
+    margin-left: 5px;
 }
 nav{
     display: none;
@@ -31,6 +29,25 @@ nav{
     border: none;
     font-size: 1.5rem;
     cursor: pointer;
+}
+.hamburger::before{
+    content: "☰";
+}
+.hamburger.active::before{
+    content: "✖";
+}
+.navigation a{
+    display: none;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    text-align: center;
+}
+
+.navigation a:hover {
+	background-color: #bbb;
+	color: #333;
+	font-weight: 700;
 }
 .directory-intro{
     padding: 20px;
@@ -97,4 +114,21 @@ nav{
 .directory-controls button.active {
   background-color: #0044cc;
   color: white;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin: 20px auto;
+    background-color: #bbb;
+}
+.social-media{
+    padding: 20px;
+}
+.social-media img{
+    width: 50px;
+    height: 50px;
+    margin: 5px;
 }
