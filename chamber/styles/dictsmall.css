@@ -132,10 +132,6 @@ nav.navigation.open a {
 }
 
 /* Control buttons style */
-.directory-controls button {
-  padding: 10px 15px;
-  cursor: pointer;
-}
 .directory-controls button.active {
   background-color: #0044cc;
   color: white;
