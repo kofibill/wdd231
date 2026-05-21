@@ -15,7 +15,7 @@
     <meta property="og:url" content="http://127.0.0.1:5500/chamber/directory.html">
     <script src="scripts/directory.js" defer></script>
     <link rel="icon" href="images/favicon-business.avif" type="image/x-icon">
-    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/normalize.min.css">
     <link rel="stylesheet" href="styles/dictsmall.css">
     <link rel="stylesheet" href="styles/dictlarge.css">
     <title>Business Directory - Adenta City Chamber of Commerce</title>
@@ -26,18 +26,16 @@
             <img src="images/bank-svgrepo-com.svg" alt="Chamber of Commerce Logo" class="logo-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
             <span>Adenta City Chamber of Commerce</span>
         </div>
-        
         <nav class="navigation" id="mainNav">
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="directory.html">Directory</a></li>
+                <li><a href="directory.html" class="active">Directory</a></li>
                 <li><a href="join.html">Join</a></li>
                 <li><a href="discover.html">Discover</a></li>
             </ul>
         </nav>
         <button class="hamburger" id="hamburgerBtn" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainNav"></button>
     </header>
-
     <main>
         <div class="directory-intro">
             <h1>Business Directory</h1>
@@ -46,16 +44,13 @@
                 Whether you're looking for a restaurant, a retail store, or a professional service, our directory has you covered.
             </p>
         </div>
-        
         <div class="directory-controls">
 		    <button id="gridBtn" class="active">🎚️ Grid View</button>
 		    <button id="listBtn">📝List View</button>
 	    </div>
-
         <!-- The class defaults to 'grid' layout -->
         <article id="memberContainer" class="grid-view"></article>
     </main>
-
     <footer>
         <div class="company-info">
             <p>&copy; 2026 Adenta City Chamber of Commerce.
@@ -65,13 +60,11 @@
                 All rights reserved.
             </p>
         </div>
-
         <div class="social-media">
             <a href="https://www.facebook.com/adentachamber" target="_blank" aria-label="Facebook"><img src="images/facebook-svgrepo-com.svg" alt="Facebook"></a>
             <a href="https://www.twitter.com/adentachamber" target="_blank" aria-label="Twitter"><img src="images/twitter.svg" alt="Twitter"></a>
             <a href="https://www.linkedin.com/company/adentachamber" target="_blank" aria-label="LinkedIn"><img src="images/linkedin-svgrepo-com.svg" alt="LinkedIn"></a>
         </div>
-
         <div class="student-info">
             <p>WDD 231 Class Project | William Nyemasem Osiakwan</p>
             <p>&copy; 2026 Adenta City Chamber of Commerce</p>

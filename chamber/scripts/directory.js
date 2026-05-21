@@ -38,7 +38,7 @@ function displayMembers(members) {
     card.innerHTML = `
     <div class="card-img-wrap">
       <img src="images/${member.image}" alt="${member.name} logo" loading="lazy" style="max-width: 100%; height: auto; display: block;">
-      <h4>${member.name}</h4>
+      <h2>${member.name}</h2>
       <p class="tagline"><em>"${member.tagline}"</em></p>
       <hr>
       <p><strong>Address:</strong> ${member.address}</p>

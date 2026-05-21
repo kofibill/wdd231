@@ -4,7 +4,7 @@
         "address": "4th Floor, Allied Heights, Olusegun Obasanjo Highway, Abelemkpe, Accra, Ghana",
         "phone": "+233 (0) 30 225 9908",
         "website": "https://hallmarkfreightgh.org/",
-        "image": "hallmark.jpeg",
+        "image": "hallmark.webp",
         "membershipLevel": 1,
         "established": 2018,
         "tagline": "Your Trusted and Reliable Freight Forwarder."
@@ -24,7 +24,7 @@
         "address": "GNGC Building, No. 1, Liberation Road, Airport Residential Area, Accra, Ghana",
         "phone": "+233 (0) 30 266 6200",
         "website": "https://www.gngcgh.com/",
-        "image": "gnpc.jpg",
+        "image": "gnpc.webp",
         "membershipLevel": 3,
         "established": 2000,
         "tagline": "Delivering Gas for a Sustainable Future."
@@ -34,7 +34,7 @@
         "address": "10th Street, Osu, Accra, Ghana",
         "phone": "+233 55 649 2290",
         "website": "https://www.bukarestaurant.com/",
-        "image": "buka.jpg",
+        "image": "buka.webp",
         "membershipLevel": 2,
         "established": 2011,
         "tagline": "\"Taste of Africa\" (Celebrating traditional West African cuisine)"
@@ -44,7 +44,7 @@
         "address": "2 Morocco Lane, Off Independence Avenue, Ministerial Area, Accra",
         "phone": "+233 30 221 3999",
         "website": "https://www.ecobank.com/ghana",
-        "image": "ecobank.jpg",
+        "image": "ecobank.webp",
         "membershipLevel": 3,
         "established": 2011,
         "tagline": "A Better Way | A Better Africa"
@@ -64,7 +64,7 @@
         "address": "Graphic Road, South Industrial Area, Accra, Ghana",
         "phone": "+233 30 268 8851",
         "website": "https://accrabrewery.com.gh/",
-        "image": "accrabrewery.jpg",
+        "image": "accrabrewery.webp",
         "membershipLevel": 2,
         "established": 1983,
         "tagline": "Bringing people together for a better world"
@@ -74,7 +74,7 @@
         "address": "Kojo Thompson Road, Adabraka, Accra, Ghana",
         "phone": "+233 30 275 3333",
         "website": "https://www.pizzamanchickenman.com/",
-        "image": "pizza.png",
+        "image": "pizza.webp",
         "membershipLevel": 3,
         "established": 2011,
         "tagline": "Serving delicious chicken and pizza with a smile."
@@ -84,7 +84,7 @@
         "address": "Stanbic Heights, 215 South Liberation Link, Airport City, Accra, Ghana",
         "phone": "+233 30 281 5789",
         "website": "https://www.stanbicbank.com/ghana",
-        "image": "stanbic.jpg",
+        "image": "stanbic.webp",
         "membershipLevel": 2,
         "established": 1983,
         "tagline": "Ghana is our home, we drive her growth"
@@ -94,7 +94,7 @@
         "address": "No. 7 Dr. Amilcar Cabral Road, Airport Residential Area, Accra, Ghana",
         "phone": "++233 30 277 0100",
         "website": "https://www.goldfields.com/ghana",
-        "image": "gold.jpg",
+        "image": "gold.webp",
         "membershipLevel": 3,
         "established": 2011,
         "tagline": "Creating Enduring Value Beyond Mining"
