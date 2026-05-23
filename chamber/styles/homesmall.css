@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', serif;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+    border: 1px solid #ddd;
+}
+header img{
+    width: 40px;
+    height: 40px;
+}
+header span{
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #000;
+    margin-left: 5px;
+}
+nav{
+    display: none;
+}
+.hamburger{
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+#hamburgerBtn::before{
+    content: "☰";
+}
+#hamburgerBtn.open::before{
+    content: "✖";
+}
+nav.navigation.open {
+    display: block;
+    position: absolute;
+    top: 70px; /* Adjust based on your header height */
+    left: 0;
+    width: 100%;
+    background-color: #333; /* Background for mobile menu */
+    z-index: 1000;
+}
+
+/* Ensure the links inside the open menu are visible */
+nav.navigation.open a {
+    display: block;
+    border-bottom: 1px solid #444;
+}
+.navigation a{
+    display: none;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    text-align: center;
+}
+.active::before {
+	content: "📍";
+}
+
+.navigation a:hover {
+	background-color: #bbb;
+	color: #333;
+	font-weight: 700;
+}
+.hero-container {
+  position: relative; 
+  width: 100%;
+  max-width: 800px; /* Adjust based on your layout width */
+  margin: 0 auto;
+}
+
+/* 2. Ensures the image scales responsively */
+.hero-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.hero-btn{
+    position: absolute;
+    bottom: 20px; 
+    right: 20px;
+  
+  /* Button styling matching the wireframe */
+  background-color: #d3d3d3; /* Light grey background */
+  color: #000000;            /* Black text */
+  padding: 10px 20px;        /* Spacing inside the button */
+  text-decoration: none;     /* Removes link underline */
+  border-radius: 4px;        /* Slightly rounded corners */
+  font-family: sans-serif;
+  font-size: 16px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Subtle depth shadow */
+  
+  /* Smooth hover transition */
+  transition: background-color 0.5s ease;
+}
+h1{
+    display: block;
+    padding-left:20px
+}
+.home-items{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding:20px
+}
+.events{
+    border:1px solid black;
+    height: 300px;
+    background-color:lightgrey;
+}
+.events h2{
+    text-align: center;
+    background-color:rgb(65, 62, 62);
+    color:white
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin: 20px auto;
+    background-color:lightgrey
+}
+.social-media{
+    padding: 20px;
+}
+.social-media img{
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+}

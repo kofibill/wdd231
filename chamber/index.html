@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Local business directory, Chamber of Commerce, Business listings, Local services">
+    <meta name="author" content="William Nyemasem Osiakwan">
+    <meta name="description" content="Local business directory for the Chamber of Commerce">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@100..900&display=swap" rel="stylesheet">
+    <meta property="og:title" content="Business Directory - Adenta City Chamber of Commerce">
+    <meta property="og:description" content="Find local businesses and services in the Chamber of Commerce directory">
+    <meta property="og:image" content="https://kofibill.github.io/wdd231/chamber/images/bank-svgrepo-com.svg">
+    <meta property="og:url" content="http://127.0.0.1:5500/chamber/directory.html">
+    <script src="scripts/directory.js" defer></script>
+    <link rel="icon" href="images/favicon-business.avif" type="image/x-icon">
+    <link rel="stylesheet" href="styles/normalize.min.css">
+    <link rel="stylesheet" href="styles/homesmall.css">
+    <link rel="stylesheet" href="styles/dictlarge.min.css">
+    <title>Home Page- Adenta City Chamber of Commerce</title>
+</head>
+<body>
+    <header>
+        <div class="logo-container" id="maincont">
+            <img src="images/bank-svgrepo-com.svg" alt="Chamber of Commerce Logo" class="logo-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <span>Adenta City Chamber of Commerce</span>
+        </div>
+        <nav class="navigation" id="mainNav">
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="discover.html">Discover</a></li>
+            </ul>
+        </nav>
+        <button class="hamburger" id="hamburgerBtn" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainNav"></button>
+    </header>
+    <main>
+        <figure class="hero-container">
+            <img src="images/chamberhero.webp" alt="The Home Hero banner" class="hero-image">
+            <a href="#" class="hero-btn">Keynote Tickets</a>
+        </figure>
+        <h1>Home</h1>
+        <section class="home-items">
+            <div class="events">
+                <h2>Events</h2>
+            </div>
+            <div class="current-weather">
+                <h2>Current Weather</h2>
+            </div>
+            <div class="weather-forecast">
+                <h2>Weather Forecast</h2>
+            </div>
+        </section>
+        <section class="business-cards">
+
+        </section>
+    </main>
+    <footer>
+        <div class="company-info">
+            <p>&copy; 2026 Adenta City Chamber of Commerce.
+                NO 10, Adenta New Town, Accra, Ghana.
+                info@adentachamber.com
+                +233 30 123 4567
+                All rights reserved.
+            </p>
+        </div>
+        <div class="social-media">
+            <a href="https://www.facebook.com/adentachamber" target="_blank" aria-label="Facebook"><img src="images/facebook-svgrepo-com.svg" alt="Facebook"></a>
+            <a href="https://www.twitter.com/adentachamber" target="_blank" aria-label="Twitter"><img src="images/twitter.svg" alt="Twitter"></a>
+            <a href="https://www.linkedin.com/company/adentachamber" target="_blank" aria-label="LinkedIn"><img src="images/linkedin-svgrepo-com.svg" alt="LinkedIn"></a>
+        </div>
+        <div class="student-info">
+            <p>WDD 231 Class Project | William Nyemasem Osiakwan</p>
+            <p>&copy; 2026 Adenta City Chamber of Commerce</p>
+            <p>This page was last modified on <span id="lastModified"></span></p>
+        </div>
+    </footer>
+</body>
+</html>
