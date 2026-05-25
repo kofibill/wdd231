@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Georgia, 'Times New Roman', serif;
+    
 }
 
 header{
@@ -82,7 +83,7 @@ nav.navigation.open a {
 }
 .hero-btn{
     position: absolute;
-    bottom: 20px; 
+    bottom: 30px; 
     right: 20px;
   
   /* Button styling matching the wireframe */
@@ -109,28 +110,91 @@ h1{
     padding:20px
 }
 .events{
-    border:1px solid black;
-    height: 300px;
-    background-color:lightgrey;
+    border:2px solid #ddd;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    height: 250px;
 }
 .events h2{
     text-align: center;
     background-color:rgb(65, 62, 62);
     color:white
 }
-footer{
+.current-weather{
+    border:2px solid #ddd;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    height: 250px;
+}
+.current-weather h2{
+    text-align: center;
+    background-color:rgb(65, 62, 62);
+    color:white
+}
+.current-weather h3, p{
+    text-align: center;
+    padding: 1px;
+}
+.current-weather img{
+    display: block;
+    margin: 0 auto;
+}
+.weather-forecast{
+    border:2px solid #ddd;
+    border-radius: 10px;
+    height: 250px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+.weather-forecast h2{
+    text-align: center;
+    background-color:rgb(65, 62, 62);
+    color:white
+}
+.weather-forecast p{
+    text-align: left;
+    padding: 3px;
+}
+.spotlight-section{
+    padding: 20px;
+}
+.spotlight-container{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    gap: 20px;
+}
+.spotlight-card {
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    position: relative;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+.footer-container{
+    display: flex;
+    flex-direction: column;
     padding: 20px;
     margin: 20px auto;
     background-color:lightgrey
 }
+.company-info h5, .company-info p{
+    text-align: left;
+}
 .social-media{
-    padding: 20px;
+    padding: 10px;
+}
+.social-media a{
+    display: inline-block;
 }
 .social-media img{
     width: 50px;
     height: 50px;
     margin: 5px;
+}
+.student-info h5, .student-info p{
+    text-align: left;
+    padding: 5px;
 }
