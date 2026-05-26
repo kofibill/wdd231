@@ -31,6 +31,8 @@ async function getWeather() {
             place.textContent = data.name;
             icon.src = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
             icon.alt = data.weather[0].description;
+            icon.setAttribute("src", `https://openweathermap.org/img/w/${data.weather[0].icon}.png`);
+            icon.setAttribute("alt", data.weather[0].description);
             description.textContent = data.weather[0].description;
             temperature.textContent = `${data.main.temp} °C`;
             humidity.textContent = `Humidity: ${data.main.humidity}%`;
