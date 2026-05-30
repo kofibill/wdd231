@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link src="trials.css">
+  <title>Document</title>
+</head>
+<body>
+  <dialog id="myModal">
+  <h2>Modal Dialog</h2>
+  <p>This is a modal dialog.</p>
+  <button id="closeModal">Close</button>
+</dialog>
+<script>
+  const modal = document.getElementById('myModal');
+  const closemodal = document.getElementById('closeModal');
+  modal.showModal();
+  closemodal.addEventListener('click',()=>{
+    modal.close();
+  });
+</script>
+<form method=""></form>
+</body>
+</html>
