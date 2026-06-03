@@ -76,7 +76,6 @@ h1{
 .formcontainer{
     display: flex;
     flex-direction: column;
-    align-items: left;
     padding: 20px;
 }
 input[type=text], input[type=tel], input[type=date], input[type=email], select {
