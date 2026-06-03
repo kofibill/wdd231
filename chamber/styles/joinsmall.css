@@ -101,7 +101,7 @@ input:required:valid{border-left-color: green;}
     margin: 20px auto;
     background-color:lightgrey
 }
-org-desciption{
+org-description{
     padding: 10px;
 }
 .submit-btn{
@@ -141,19 +141,70 @@ h4{
     border-radius: 10px;
     padding: 15px;
     background-color: lightgrey;
+    animation-name: colorLoop1;
+    animation-duration: 3s; 
+    animation-iteration-count: infinite;
+    animation-direction: alternate;    /* Smoothly reverses back to original */
+    animation-timing-function: ease-in-out;
 }
 .silver{
     border:2px solid #ddd;
     border-radius: 10px;
     padding: 15px;
     background-color: lightgrey;
+    animation-name: colorLoop2;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;    /* Smoothly reverses back to original */
+    animation-timing-function: ease-in-out;
 }
 .gold{
     border:2px solid #ddd;
     border-radius: 10px;
     padding: 15px;
     background-color: lightgrey;
+    animation-name: colorLoop3;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;    /* Smoothly reverses back to original */
+    animation-timing-function: ease-in-out;
 }
+#dialogbox, #dialogbox1, #dialogbox2, #dialogbox3{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: white;
+    width: 300px;
+}
+@keyframes colorLoop1{
+    from{
+        background-color: white;
+    }
+    to{
+        background-color: #CD7F32;
+    }
+}
+@keyframes colorLoop2{
+    from{
+        background-color: white;
+    }
+    to{
+        background-color: #C0C0C0;
+    }
+}
+@keyframes colorLoop3{
+    from{
+        background-color: white;
+    }
+    to{
+        background-color: #FFD700;
+    }
+}
+
 .company-info h5, .company-info p{
     text-align: left;
 }
