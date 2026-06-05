@@ -1,0 +1,161 @@
+ /* --- Color Scheme Variables (FC Barcelona Inspired) --- */
+        :root {
+            --fc-blue: #004d98;      /* Deep Blue */
+            --fc-maroon: #a50044;    /* Burgundy/Maroon */
+            --fc-gold: #edbb00;      /* Accent Gold */
+            --fc-dark: #111111;      /* Deep Black/Gray */
+            --fc-light: #f4f4f4;     /* Light Gray Background */
+            --white: #ffffff;
+        }
+
+        /* --- Global Reset & Typography --- */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background-color: var(--fc-light);
+            color: var(--fc-dark);
+            line-height: 1.6;
+            padding: 20px;
+        }
+        /* --- Typography Hierarchy --- */
+        h1, h2, h3 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: var(--fc-blue);
+            margin-bottom: 15px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            text-align: center;
+            color: var(--white);
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            border-bottom: 4px solid var(--fc-gold);
+            padding-bottom: 5px;
+            margin-top: 20px;
+        }
+
+        h3 {
+            font-size: 1.3rem;
+            color: var(--fc-maroon);
+        }
+
+        p, ul {
+            margin-bottom: 15px;
+            font-size: 1rem;
+        }
+
+        ul {
+            margin-left: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        /* --- Layout Structures --- */
+        header {
+            background-color: var(--fc-blue);
+            border-bottom: 8px solid var(--fc-maroon);
+            padding: 30px;
+            border-radius: 8px 8px 0 0;
+        }
+
+        header p {
+            color: var(--fc-gold);
+            text-align: center;
+            font-weight: 600;
+            margin-bottom: 0;
+        }
+
+        main {
+            background-color: var(--white);
+            padding: 30px;
+            border-radius: 0 0 8px 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        /* --- Color Scheme Visual Palette --- */
+        .color-palette {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .color-box {
+            padding: 20px;
+            text-align: center;
+            font-weight: bold;
+            color: var(--white);
+            border-radius: 6px;
+            text-transform: uppercase;
+            font-size: 0.85rem;
+        }
+
+        .box-blue { background-color: var(--fc-blue); }
+        .box-maroon { background-color: var(--fc-maroon); }
+        .box-gold { background-color: var(--fc-gold); color: var(--fc-dark); }
+
+        /* --- Wireframe Layout CSS --- */
+        .wireframe-container {
+            display: grid;
+            gap: 20px;
+            margin-top: 25px;
+        }
+
+        .wireframe-title {
+            background: #e0e0e0;
+            padding: 10px;
+            font-weight: bold;
+            text-align: center;
+            border-radius: 4px;
+        }
+
+        .wf-mockup {
+            background: #eee;
+            border: 2px dashed #999;
+            padding: 15px;
+            border-radius: 6px;
+        }
+
+        /* Simulated Elements */
+        .wf-header { background: var(--fc-blue); color: var(--white); padding: 15px; text-align: center; font-weight: bold; }
+        .wf-nav { background: var(--fc-maroon); color: var(--white); padding: 8px; text-align: center; font-size: 0.9rem; }
+        .wf-banner { background: #dddddd; border: 2px solid var(--fc-gold); height: 120px; display: flex; align-items: center; justify-content: center; margin: 10px 0; font-weight: bold; }
+        .wf-main-content { background: var(--white); border: 1px solid #ccc; padding: 15px; margin: 10px 0; }
+        .wf-sidebar { background: #f9f9f9; border: 1px solid #ccc; padding: 15px; margin: 10px 0; }
+        .wf-footer { background: var(--fc-dark); color: var(--white); padding: 10px; text-align: center; font-size: 0.8rem; }
+
+        /* --- Media Queries for Layout and Wireframes --- */
+        
+        /* Mobile Viewport Simulation */
+        @media (min-width: 768px) {
+            .wireframe-container {
+                grid-template-columns: 1fr 1.5fr;
+            }
+            
+            /* Desktop Layout Grid Transformation for Wireframe */
+            .desktop-grid {
+                display: grid;
+                grid-template-columns: 2fr 1fr;
+                gap: 15px;
+            }
+            .desktop-grid .wf-banner {
+                grid-column: span 2;
+                height: 180px;
+            }
+        }
