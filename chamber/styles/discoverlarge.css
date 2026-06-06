@@ -1,0 +1,75 @@
+@media (min-width: 640px) {
+    /* Styles for larger screens (desktop) */
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body {
+        font-family: 'Georgia', 'Times New Roman', 'serif';
+        background-color: #f0f0f0;
+        color: #333;
+        margin: 0;
+        padding: 20px;
+    }
+    header{
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px;
+    }
+    .logo-img {
+        width: 40px;
+        height: 40px;
+    }
+    nav.navigation{
+        display: block;
+    }
+    .navigation ul {
+        display: flex;
+        gap: 20px;          /* Adds space between your links */
+        list-style: none;   /* Removes the default bullet points */
+        margin: 0;
+        padding: 0;
+    }
+    .navigation a {
+        display: inline-block; /* Overrides the mobile 'display: none' */
+        color: #333;           /* Changes color to dark text so it's readable */
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    header span{
+        text-align:left;
+        margin-left: 10px;
+    }
+    #hamburgerBtn{
+        display: none;
+    }
+
+    main {
+        max-width: 1200px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .footer-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 20px;
+        text-align: left;
+    }
+    .social-media {
+        align-self: center;
+        margin-left: auto;
+    }
+    .student-info {
+        margin-left: 20px;
+    }
+    .student-info h5, .student-info p{
+        text-align: left;
+    }
+}
