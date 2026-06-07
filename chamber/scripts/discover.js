@@ -37,11 +37,9 @@ localAttractions.forEach(attraction => {
   // Build the exact structure required by your prompt
   card.innerHTML = `
     <h2>${attraction.name}</h2>
-    <figure>
-      <img src="images/${attraction.image}" alt="${attraction.name}" loading="lazy" style="max-width: 100%; height: auto; display: block;">
-    </figure>
-    <address>${attraction.address}</address>
-    <p>${attraction.description}</p>
+    <img src="images/${attraction.image}" alt="${attraction.name}" loading="lazy" style="max-width: 100%; height: auto; display: block;">
+    <address><strong>Address:</strong> ${attraction.address}</address>
+    <p><strong>Description:</strong> ${attraction.description}</p>
     <button type="button">Learn More</button>
   `;
 

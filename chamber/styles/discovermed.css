@@ -1,0 +1,15 @@
+@media (min-width: 641px) and (max-width: 1024px) {
+    body {
+        padding: 20px;
+    }
+
+    /* Target grid structure for tablet viewport */
+    .attraction-card {
+        grid-template-areas:
+            "name name"
+            "image description"
+            "image address"
+            "button button";
+        gap: 15px;
+    }
+}

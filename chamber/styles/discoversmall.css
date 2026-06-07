@@ -1,95 +1,128 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Georgia, 'Times New Roman', serif;
+    font-family: 'Georgia', 'Times New Roman', serif;
 }
 
-header{
+body {
+    background-color: #f0f0f0;
+    color: #333;
+    padding: 15px;
+}
+
+header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 15px 20px;
     border: 1px solid #ddd;
+    background-color: #fff;
 }
-header img{
+
+header img, .logo-img {
     width: 40px;
     height: 40px;
 }
-header span{
+
+header span {
     font-size: 1.2rem;
     font-weight: bold;
     color: #000;
     margin-left: 5px;
 }
-nav{
+
+/* Mobile Navigation */
+nav.navigation {
     display: none;
 }
-.hamburger{
+
+#hamburgerBtn {
     background: none;
     border: none;
     font-size: 1.5rem;
     cursor: pointer;
 }
-#hamburgerBtn::before{
-    content: "☰";
-}
-#hamburgerBtn.open::before{
-    content: "✖";
-}
+
+#hamburgerBtn::before { content: "☰"; }
+#hamburgerBtn.open::before { content: "✖"; }
+
 nav.navigation.open {
     display: block;
     position: absolute;
-    top: 70px; /* Adjust based on your header height */
+    top: 70px;
     left: 0;
     width: 100%;
-    background-color: #333; /* Background for mobile menu */
+    background-color: #333;
     z-index: 1000;
 }
 
-/* Ensure the links inside the open menu are visible */
-nav.navigation.open a {
+.navigation a {
     display: block;
-    border-bottom: 1px solid #444;
-}
-.navigation a{
-    display: none;
     color: white;
     text-decoration: none;
     padding: 10px;
     text-align: center;
+    border-bottom: 1px solid #444;
 }
+
 .active::before {
-	content: "📍";
+    content: "📍";
 }
 
 .navigation a:hover {
-	background-color: #bbb;
-	color: #333;
-	font-weight: 700;
+    background-color: #bbb;
+    color: #333;
+    font-weight: 700;
 }
 
-.attraction-card{
+/* Mobile Attraction Card */
+.attraction-card {
     border: 1px solid #ddd;
-    border-radius: 5px;
+    border-radius: 10px;
     padding: 15px;
     margin: 10px;
     background-color: #f9f9f9;
+    display: grid;
+    grid-template-areas: 
+        "name"
+        "image"
+        "description"
+        "address"
+        "button";
+    gap: 10px;
 }
-.company-info h5, .company-info p{
+
+.attraction-card h2 { grid-area: name; }
+.attraction-card img { grid-area: image; width: 100%; height: auto; }
+.attraction-card p { grid-area: description; }
+.attraction-card address { grid-area: address; }
+.attraction-card button { grid-area: button;
+ background-color: #333;
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 20px;
+    font-size: 1rem;
+    cursor: pointer; }
+
+/* Footer Elements */
+.company-info h5, .company-info p,
+.student-info h5, .student-info p {
     text-align: left;
+    padding: 5px;
 }
-.social-media{
+
+.social-media {
     padding: 10px;
 }
-.social-media a{
+
+.social-media a {
     display: inline-block;
 }
-.social-media img{
+
+.social-media img {
     width: 50px;
     height: 50px;
     margin: 5px;
-}
-.student-info h5, .student-info p{
-    text-align: left;
-    padding: 5px;
 }
