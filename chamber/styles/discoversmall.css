@@ -103,8 +103,29 @@ nav.navigation.open {
     border: none;
     border-radius: 20px;
     font-size: 1rem;
-    cursor: pointer; }
-
+    cursor: pointer;
+}
+#banner-container {
+    background-color: #e3f2fd;
+    color: #0d47a1;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-left: 5px solid #2196f3;
+    border-radius: 4px;
+    position: relative;
+}
+#close-banner {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #0d47a1
+}
 /* Footer Elements */
 .company-info h5, .company-info p,
 .student-info h5, .student-info p {
