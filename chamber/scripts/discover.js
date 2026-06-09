@@ -37,7 +37,7 @@ localAttractions.forEach(attraction => {
   // Build the exact structure required by your prompt
   card.innerHTML = `
     <h2>${attraction.name}</h2>
-    <img src="images/${attraction.image}" alt="${attraction.name}" loading="lazy" style="max-width: 100%; height: auto; display: block;">
+    <img src="images/${attraction.image}" alt="${attraction.name}" loading="lazy" style="max-width: 300px; height:200px; display: block;">
     <address><strong>Address:</strong> ${attraction.address}</address>
     <p><strong>Description:</strong> ${attraction.description}</p>
     <button type="button">Learn More</button>
@@ -46,3 +46,21 @@ localAttractions.forEach(attraction => {
   // Append the newly created card to your webpage container
   cardContainer.appendChild(card);
 });
+
+function checkVisitorHistory(){
+    //Getting elements from the page
+    const container = document.getElementById('banner-container');
+    const message = document.getElementById('message');
+    const currentTime = Date.now();
+    //determine the logic based on if they have visited the page or not
+    const lastVisit = localStorage.getItem('lastWebpageVisit');
+
+    if (!lastVisit){
+        message.textContent = 'Welcome! Let us know if you have any questions.';
+    } else {
+        // Returning visitor - do the math
+        const timeDifference = currentTime - parseInt(lastVisit);
+        const oneDayInMilliseconds = 24 * 60 * 60 * 1000;
+
+    }
+}
