@@ -12,4 +12,12 @@
             "button button";
         gap: 15px;
     }
+    .attraction-card img{
+        transition: transform 0.5s ease, filter 0.5s ease;
+        filter: brightness(85%) saturate(90%);
+    }
+    .attraction-card img:hover{
+        filter: brightness(100%) saturate(140%);
+        transform: scale(1.03);
+    }
 }

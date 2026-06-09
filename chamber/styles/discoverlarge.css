@@ -36,7 +36,7 @@
         display: inline-block; /* Overrides the mobile 'display: none' */
         color: #333;           /* Changes color to dark text so it's readable */
         text-decoration: none;
-        font-weight: bold;
+        font-weight:bold;
     }
 
     header span{
@@ -55,7 +55,7 @@
         border-radius: 8px;
         box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
-     #card-container {
+    #card-container {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 25px;
@@ -71,7 +71,7 @@
         /* Image gets 45% of width, text gets 55% */
         grid-template-columns: 4.5fr 5.5fr; 
         grid-template-areas: 
-            "image name"
+            "name name"
             "image description"
             "image address"
             "button button"; /* Button stretches full width across the base */
@@ -85,11 +85,19 @@
         font-size: 1.3rem;
         margin: 0; 
     }
-    .attraction-card img { 
+    .attraction-card img{ 
         grid-area: image; 
         width: 100%; 
-        height: auto; 
-        border-radius: 4px; 
+        height: 200px; 
+        border-radius: 4px;
+        object-fit: cover;
+        align-self: start;
+        transition: transform 0.5s ease, filter 0.5s ease;
+        filter: brightness(85%) saturate(90%);
+    }
+    .attraction-card img:hover{
+        filter: brightness(100%) saturate(140%);
+        transform: scale(1.03);
     }
     .attraction-card p { 
         grid-area: description; 
