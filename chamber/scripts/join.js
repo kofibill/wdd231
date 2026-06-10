@@ -23,14 +23,14 @@ const resultsDiv = document.getElementById('results');
         const params = new URLSearchParams(window.location.search);
 
         resultsDiv.innerHTML = `
-            <p><strong>Full Name:</strong> ${params.get("firstName") || 'N/A'} ${params.get("lastName") || 'N/A'}</p>
-            <p><strong>Organizational Title:</strong> ${params.get("organization") || 'N/A'}</p>
-            <p><strong>Email:</strong> ${params.get("email") || 'N/A'}</p>
-            <p><strong>Phone number:</strong> ${params.get("phone") || 'N/A'}</p>
-            <p><strong>Organizational Name:</strong> ${params.get("orgName") || 'N/A'}</p>
-            <p><strong>Membership Level:</strong> ${params.get("membership_level") || 'N/A'}</p>
-            <p><strong>Description of Business:</strong> ${params.get("org_description") || 'N/A'}</p>
-            <p style="margin-top: 20px; font-weight: bold;">Thank you for applying to the Adenta City Chamber of Commerce!</p>
+        <p><strong>Full Name:</strong> ${params.get("firstName") || 'N/A'} ${params.get("lastName") || 'N/A'}</p>
+        <p><strong>Organizational Title:</strong> ${params.get("organization") || 'N/A'}</p>
+        <p><strong>Email:</strong> ${params.get("email") || 'N/A'}</p>
+        <p><strong>Phone number:</strong> ${params.get("phone") || 'N/A'}</p>
+        <p><strong>Organizational Name:</strong> ${params.get("orgName") || 'N/A'}</p>
+        <p><strong>Membership Level:</strong> ${params.get("membership_level") || 'N/A'}</p>
+        <p><strong>Description of Business:</strong> ${params.get("org_description") || 'N/A'}</p>
+        <p style="margin-top: 20px; font-weight: bold;">Thank you for applying to the Adenta City Chamber of Commerce!</p>
         `;
     }
 });
