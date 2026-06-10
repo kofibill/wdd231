@@ -82,6 +82,6 @@ function checkVisitorHistory(){
 // Function to close the message area when "X" is clicked
     const closeButton = document.getElementById('close-banner');
     if (closeButton){
-        closeButton.addEventListener('onclick',closeBanner);
+        closeButton.addEventListener('click',closeButton);
     }
 
