@@ -1,7 +1,7 @@
+const container = document.getElementById('banner-container')
 //get the current date and time
 document.addEventListener('DOMContentLoaded', () => {
-
-    // Last Modified Date
+// Last Modified Date
     const lastModifiedEl = document.getElementById("lastModified");
     if (lastModifiedEl) {
         lastModifiedEl.textContent = new Date(document.lastModified).toLocaleDateString('en-US', {
@@ -19,7 +19,6 @@ if (hamburgerBtn && mainNav) {
         hamburgerBtn.classList.toggle('open');
     });
 }
-
 });
 
 // 1. Import your data from the .mjs file
@@ -82,6 +81,7 @@ function checkVisitorHistory(){
 // Function to close the message area when "X" is clicked
     const closeButton = document.getElementById('close-banner');
     if (closeButton){
-        closeButton.addEventListener('click',closeButton);
+        closeButton.addEventListener('click',()=>{
+            container.style.display='none';});
     }
 
