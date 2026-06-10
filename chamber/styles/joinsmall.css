@@ -207,6 +207,12 @@ h4{
 .company-info h5, .company-info p{
     text-align: left;
 }
+.footer-heading {
+    font-size: 0.83em; /* standard h5 size */
+    font-weight: bold;
+    margin-top: 1.67em;
+    margin-bottom: 1.67em;
+}
 .social-media{
     padding: 10px;
 }
