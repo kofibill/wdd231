@@ -1,0 +1,88 @@
+@media (min-width: 640px) {
+    /* Styles for larger screens (desktop) */
+    :root {
+    --fc-blue: #004d98;      /* Deep Blue */
+    --fc-maroon: #a50044;    /* Burgundy/Maroon */
+    --fc-gold: #edbb00;      /* Accent Gold */
+    --fc-dark: #111111;      /* Deep Black/Gray */
+    --fc-light: #f4f4f4;     /* Light Gray Background */
+    --white: #ffffff;
+    }
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Montserrat, serif;
+        box-sizing: border-box;
+    }
+    header{
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px;
+    }
+    nav.navigation{
+        display: block;
+    }
+    .navigation ul {
+        display: flex;
+        gap: 20px;          /* Adds space between your links */
+        list-style: none;   /* Removes the default bullet points */
+        margin: 0;
+        padding: 0;
+    }
+    .navigation a {
+        display: inline-block; /* Overrides the mobile 'display: none' */
+        color: #333;           /* Changes color to dark text so it's readable */
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    header span{
+        text-align:left;
+        margin-left: 10px;
+    }
+    #hamburgerBtn{
+        display: none;
+    }
+
+    main {
+        background-color: #ffffff;   
+        color: var(--fc-maroon);          /* Background color to show off the boundaries */
+        border-radius: 16px;                   /* Rounds all four corners of the main section */
+        padding: 20px;                         /* Keeps content from pressing against the rounded edges */
+        margin: 20px auto;                     /* Adds spacing from the header/footer and centers it */
+        max-width: 1200px;                     /* Limits layout expansion on extra wide screens */
+        width: 90%;                            /* Leaves breathing room on mobile screen edges */
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.747);/* Adds depth to make the container pop */
+        overflow: hidden; 
+    }
+    .main-container{
+        display:grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    section img {
+    width: 100%;             /* Stretches the image to fill the full width of the container */
+    height: 300px;           /* Set whatever large fixed height you need */
+    object-fit: cover;       /* CRITICAL: Fills the space cleanly without distorting proportions */
+    object-position: center; /* Ensures the middle of the photo stays perfectly focused */
+    }
+    .footer-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 20px;
+        text-align: left;
+    }
+    .social-media {
+        align-self: center;
+        margin-left: auto;
+    }
+    .student-info {
+        margin-left: 20px;
+    }
+    .student-info h5, .student-info p{
+        text-align: left;
+    }
+}

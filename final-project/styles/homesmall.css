@@ -1,0 +1,261 @@
+:root {
+    --fc-blue: #004d98;      /* Deep Blue */
+    --fc-maroon: #a50044;    /* Burgundy/Maroon */
+    --fc-gold: #edbb00;      /* Accent Gold */
+    --fc-dark: #111111;      /* Deep Black/Gray */
+    --fc-light: #f4f4f4;     /* Light Gray Background */
+    --white: #ffffff;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Montserrat, 'Open Sans', serif;
+    box-sizing: border-box;
+}
+header{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    padding: 15px;
+}
+header::after{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 6px; /* The thickness of your border */
+  /* Creates the split color effect */
+  background: linear-gradient(to right, var(--fc-maroon) 50%, var(--fc-blue) 50%);
+  /* Optional: allows you to round the edges of the border */
+  border-radius: 10px; 
+}
+.logo-container img{
+    width: 50px;
+    height: 50px;
+}
+.logo-container span{
+    font-size: 1.2rem;
+    font-weight: bold;
+    color:var(--fc-maroon);
+}
+nav{
+    display: none;
+}
+.hamburger{
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+#hamburgerBtn::before{
+    content: "☰";
+    color: var(--fc-blue);
+}
+#hamburgerBtn.open::before{
+    content: "✖";
+    color: var(--fc-blue);
+}
+nav.navigation.open {
+    display: block;
+    position: absolute;
+    top: 70px; /* Adjust based on your header height */
+    left: 0;
+    width: 100%;
+    background-color: #333; /* Background for mobile menu */
+    z-index: 1000;
+}
+
+/* Ensure the links inside the open menu are visible */
+nav.navigation.open a {
+    display: block;
+    border-bottom: 1px var(--fc-blue);
+}
+.navigation a{
+    display: none;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    text-align: center;
+}
+.active::before {
+	content: "📍";
+}
+
+.navigation a:hover {
+	background-color: #bbb;
+	color: #333;
+	font-weight: 700;
+}
+.hero-container {
+  position: relative; 
+  width: 100%;
+  max-width: 800px; /* Adjust based on your layout width */
+  margin: 0 auto;
+}
+
+/* 2. Ensures the image scales responsively */
+.hero-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.hero-btn{
+    position: absolute;
+    bottom: 30px; 
+    right: 20px;
+  
+  /* Button styling matching the wireframe */
+  background-color: var(--fc-maroon); /* Light grey background */
+  color: var(--white);            /* Black text */
+  padding: 10px 20px;        /* Spacing inside the button */
+  text-decoration: none;     /* Removes link underline */
+  border-radius: 10px;        /* Slightly rounded corners */
+  font-family: Montserrat;
+  font-size: 16px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Subtle depth shadow */
+  
+  /* Smooth hover transition */
+  transition: background-color 0.5s ease;
+}
+main{
+    background-color: #ffffff;   
+    color: var(--fc-maroon);          /* Background color to show off the boundaries */
+    border-radius: 16px;                   /* Rounds all four corners of the main section */
+    padding: 20px;                         /* Keeps content from pressing against the rounded edges */
+    margin: 20px auto;                     /* Adds spacing from the header/footer and centers it */
+    max-width: 1200px;                     /* Limits layout expansion on extra wide screens */
+    width: 90%;                            /* Leaves breathing room on mobile screen edges */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.747);/* Adds depth to make the container pop */
+    overflow: hidden; 
+}
+h1{
+    color: var(--fc-blue);
+    text-align: center;
+    margin: 10px;
+}
+h2{
+    text-align: center;
+    color: var(--fc-blue);
+}
+h3{
+    text-align: center;
+    color: var(--fc-blue);
+}
+h4{
+    text-align: center;
+    color: var(--fc-blue);
+}
+/* Slideshow container */
+.slideshow-container {
+    display: flex;
+    flex-direction: column;   /* Stacks the text cleanly underneath the image */
+    align-items: center;      /* Centers the slideshow content */
+    gap: 15px;
+    width: 100%;
+}
+.slides-column {
+    width: 300px;
+    height: 240px;            /* Reserves room for the image + figcaption text */
+    position: relative;
+    overflow: hidden;
+}
+.text {
+    width: 100%;
+    margin-top: 5px;
+    padding: 10px;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 5.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+.gallery-container img{
+    width: 300px;
+    height: 200x;
+}
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Creates 2 equal-width columns */
+    gap: 15px;                             /* Adds uniform spacing between the items */
+    width: 100%;
+    padding: 10px;
+}
+figure:hover{
+    transform: translateY(-5px);
+}
+/* Optional: Ensures the images scale beautifully inside their grid slots */
+.gallery-container figure {
+    margin: 0;/* Removes default browser margins */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f0f0f0;             /* Optional: gives a light card background */
+    border-radius: 12px;                   /* Rounds the figure card layout */
+    overflow: hidden;                      /* CRITICAL: Cuts off sharp image corners */
+    box-shadow: 0 4px 6px rgba(20, 19, 19, 0.1); /* Optional: adds a subtle modern shadow */
+    padding-bottom: 8px; 
+}
+.gallery-container img {
+    width: 100%; /* Makes image fill the 2-column width */
+    height: auto; /* Keeps image from distorting */
+}
+section img {
+    display: block;           /* Changes image from inline to a block element */
+    margin-left: auto;        /* Balanced automatic margins push the image */
+    margin-right: auto;       /* perfectly into the center of its container */
+    max-width: 300px;
+    height: 300px;
+}
+.culture p{
+    width: 100%;
+    padding: 10px;
+    color: var(--fc-maroon);
+}
+.footer-container p{
+    font-size: small;
+    text-align: center;
+    color: var(--fc-maroon);
+}
+/* Centers the container horizontally and arranges links in a row */
+.social-media {
+    display: flex;
+    flex-direction: row;       /* Rows the items horizontally */
+    justify-content: center;   /* Centers the group horizontally */
+    align-items: center;       /* Centers the items vertically */
+    gap: 16px;                 /* Adds clean spacing between icons */
+    margin: 15px 0;            /* Adds breathing room above and below the row */
+    width: 100%;               /* Ensures container spans the full footer width */
+}
+
+/* Forces the clickable links to keep a structured layout */
+.social-media a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Controls the small sizing of the SVG/PNG icons */
+.social-media img {
+    width: 24px;               /* Scales width to a clean, small size */
+    height: 24px;              /* Keeps the aspect ratio perfectly square */
+    object-fit: contain;       /* Prevents the icons from stretching or distorting */
+    transition: transform 0.2s;/* Smooth setup for a hover effect */
+}
+
+/* Optional interactive hover effect */
+.social-media a:hover img {
+    transform: scale(1.15);    /* Slightly enlarges icons when hovered */
+}

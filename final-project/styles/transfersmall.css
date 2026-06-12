@@ -1,0 +1,273 @@
+:root {
+    --fc-blue: #004d98;      /* Deep Blue */
+    --fc-maroon: #a50044;    /* Burgundy/Maroon */
+    --fc-gold: #edbb00;      /* Accent Gold */
+    --fc-dark: #111111;      /* Deep Black/Gray */
+    --fc-light: #f4f4f4;     /* Light Gray Background */
+    --white: #ffffff;
+}
+body{
+    font-family: Montserrat;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Montserrat,'Open Sans' serif;
+    box-sizing: border-box;
+}
+header{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    padding: 15px;
+}
+header::after{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 6px; /* The thickness of your border */
+  /* Creates the split color effect */
+  background: linear-gradient(to right, var(--fc-maroon) 50%, var(--fc-blue) 50%);
+  /* Optional: allows you to round the edges of the border */
+  border-radius: 10px; 
+}
+.logo-container img{
+    width: 50px;
+    height: 50px;
+}
+.logo-container span{
+    font-size: 1.2rem;
+    font-weight: bold;
+    color:var(--fc-maroon);
+}
+nav{
+    display: none;
+}
+.hamburger{
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+#hamburgerBtn::before{
+    content: "☰";
+    color: var(--fc-blue);
+}
+#hamburgerBtn.open::before{
+    content: "✖";
+    color: var(--fc-blue);
+}
+nav.navigation.open {
+    display: block;
+    position: absolute;
+    top: 70px; /* Adjust based on your header height */
+    left: 0;
+    width: 100%;
+    background-color: #333; /* Background for mobile menu */
+    z-index: 1000;
+}
+
+/* Ensure the links inside the open menu are visible */
+nav.navigation.open a {
+    display: block;
+    border-bottom: 1px var(--fc-blue);
+}
+.navigation a{
+    display: none;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    text-align: center;
+}
+.active::before {
+	content: "📍";
+}
+
+.navigation a:hover {
+	background-color: #bbb;
+	color: #333;
+	font-weight: 700;
+}
+.hero-container {
+  position: relative; 
+  width: 100%;
+  max-width: 800px; /* Adjust based on your layout width */
+  margin: 0 auto;
+}
+
+main{
+    background-color: #ffffff;   
+    color: var(--fc-maroon);          /* Background color to show off the boundaries */
+    border-radius: 16px;                   /* Rounds all four corners of the main section */
+    padding: 20px;                         /* Keeps content from pressing against the rounded edges */
+    margin: 20px auto;                     /* Adds spacing from the header/footer and centers it */
+    max-width: 1200px;                     /* Limits layout expansion on extra wide screens */
+    width: 90%;                            /* Leaves breathing room on mobile screen edges */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.747);/* Adds depth to make the container pop */
+    overflow: hidden; 
+}
+h1{
+    color: var(--fc-blue);
+    text-align: center;
+    margin: 10px;
+}
+h2{
+    text-align: center;
+    color: var(--fc-blue);
+}
+h3{
+    text-align: center;
+    color: var(--fc-blue);
+}
+h4{
+    text-align: center;
+    color: var(--fc-blue);
+}
+body.barca-theme {
+    background-color: #f4f4f6;
+    font-family: 'Montserrat', sans-serif;
+}
+/* Standout Rounded Main Layout Element */
+.rounded-main {
+    background-color: #ffffff;   
+    color: var(--fc-maroon);          /* Background color to show off the boundaries */
+    border-radius: 16px;                   /* Rounds all four corners of the main section */
+    padding: 20px;                         /* Keeps content from pressing against the rounded edges */
+    margin: 20px auto;                     /* Adds spacing from the header/footer and centers it */
+    max-width: 1200px;                     /* Limits layout expansion on extra wide screens */
+    width: 90%;                            /* Leaves breathing room on mobile screen edges */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.747);/* Adds depth to make the container pop */
+    overflow: hidden; 
+}
+.intro-text {
+    text-align: center;
+    color: #555;
+    max-width: 700px;
+    margin: 0 auto 25px auto;
+}
+
+/* JS Filter Buttons Layout */
+.filter-container {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 30px;
+}
+
+.filter-btn {
+    background-color: #eee;
+    border: none;
+    padding: 10px 18px;
+    font-weight: 600;
+    font-family: inherit;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.filter-btn.active, .filter-btn:hover {
+    background-color: var(--barca-blue);
+    color: #ffffff;
+}
+
+/* use flex to stack the cards/*/
+.news-gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+}
+
+/* Rounded Cards Styling */
+.news-card {
+    background-color: var(--card-bg);
+    border-radius: 12px;
+    overflow: hidden; /* Cookie cutter for sharp image boundaries */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    border: 1px solid #eef0f5;
+    transition: transform 0.3s ease;
+}
+
+.news-card:hover {
+    transform: translateY(-5px);
+}
+/* Stretch image across card space without any distortion */
+.card-img-wrapper img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover; /* Stretches cleanly without stretching objects inside */
+    object-position: center;
+    display: block;
+}
+.card-content {
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.card-content h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: var(--barca-blue);
+}
+.card-content p {
+    margin: 0;
+    font-size: 0.95rem;
+    color: var(--text-dark);
+    line-height: 1.5;
+}
+/* Categorized Status Badges */
+.badge {
+    align-self: flex-start;
+    padding: 4px 10px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 4px;
+}
+.transfer-badge { background-color: #d4edda; color: #155724; }
+.rumor-badge { background-color: #fff3cd; color: #856404; }
+.club-badge { background-color: #cce5ff; color: #004085; }
+.culture p{
+    width: 100%;
+    padding: 10px;
+    color: var(--fc-maroon);
+}
+.footer-container p{
+    font-size: small;
+    text-align: center;
+    color: var(--fc-maroon);
+}
+/* Centers the container horizontally and arranges links in a row */
+.social-media {
+    display: flex;
+    flex-direction: row;       /* Rows the items horizontally */
+    justify-content: center;   /* Centers the group horizontally */
+    align-items: center;       /* Centers the items vertically */
+    gap: 16px;                 /* Adds clean spacing between icons */
+    margin: 15px 0;            /* Adds breathing room above and below the row */
+    width: 100%;               /* Ensures container spans the full footer width */
+}
+
+/* Forces the clickable links to keep a structured layout */
+.social-media a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Controls the small sizing of the SVG/PNG icons */
+.social-media img {
+    width: 24px;               /* Scales width to a clean, small size */
+    height: 24px;              /* Keeps the aspect ratio perfectly square */
+    object-fit: contain;       /* Prevents the icons from stretching or distorting */
+    transition: transform 0.2s;/* Smooth setup for a hover effect */
+}
+
+/* Optional interactive hover effect */
+.social-media a:hover img {
+    transform: scale(1.15);    /* Slightly enlarges icons when hovered */
+}

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="FC Barcelona, Transfers, Current Affairs, WDD231">
+    <meta name="author" content="William Nyemasem Osiakwan">
+    <meta name="description" content="Transfer market and current news regarding FC Barcelona - WDD231 Project">
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/transfersmall.css">
+    <link rel="stylesheet" href="styles/transferslarge.css">
+    <script src="scripts/transfers.js" defer></script>
+    <title>Transfer Market & Current Affairs - FC Barcelona</title>
+</head>
+<body class="barca-theme">
+    <header>
+        <div class="logo-container" id="maincont">
+            <img src="images/barca-logo.webp" alt="FC Barcelona Logo" class="logo-img">
+            <span>FC Barcelona</span>
+        </div>
+        <nav class="navigation" id="mainNav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="transfer.html" class="active">Transfer Market and Current Affairs</a></li>
+                <li><a href="team.html">Meet the Team</a></li>
+                <li><a href="join.html">Join Us Here!</a></li>
+            </ul>
+        </nav>
+        <button class="hamburger" id="hamburgerBtn" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainNav"></button>
+    </header>
+    <main class="rounded-main">
+        <h1>Transfer Market & Current Club Affairs</h1>
+        <p class="intro-text">Stay updated with the latest live movements, contract renewals, and Spotify Camp Nou infrastructure developments.</p>
+        
+        <!-- Interactive JS Filter Buttons -->
+        <div class="filter-container">
+            <button class="filter-btn active" data-filter="all">Show All</button>
+            <button class="filter-btn" data-filter="transfers">Transfers & Rumors</button>
+            <button class="filter-btn" data-filter="club">Club News</button>
+        </div>
+
+        <!-- News Grid Displayed 2-by-2 Side-by-Side -->
+        <section class="news-gallery">
+            <!-- Card 1 -->
+            <article class="news-card" data-category="transfers">
+                <div class="card-img-wrapper">
+                    <img src="images/gordon.webp" alt="Anthony Gordon signing" onerror="this.src='images/cultural.webp'">
+                </div>
+                <div class="card-content">
+                    <span class="badge transfer-badge">Official Transfer</span>
+                    <h3>Anthony Gordon Signs with Barça</h3>
+                    <p>La Blaugrana have officially completed the massive signing of Anthony Gordon from Newcastle United. The English winger is already training under Hansi Flick.</p>
+                </div>
+            </article>
+
+            <!-- Card 2 -->
+            <article class="news-card" data-category="transfers">
+                <div class="card-img-wrapper">
+                    <img src="images/rashford.webp" alt="Marcus Rashford news" onerror="this.src='images/cultural.webp'">
+                </div>
+                <div class="card-content">
+                    <span class="badge rumor-badge">Rumor</span>
+                    <h3>Rashford Loan Decision Looming</h3>
+                    <p>Reports show Barça may decline the $35M permanent buy option for Marcus Rashford. A secondary loan extension from Manchester United is currently being evaluated.</p>
+                </div>
+            </article>
+            <!-- Card 3 -->
+            <article class="news-card" data-category="club">
+                <div class="card-img-wrapper">
+                    <img src="images/stadium.webp" alt="Spotify Camp Nou Construction" onerror="this.src='images/stadium.webp'">
+                </div>
+                <div class="card-content">
+                    <span class="badge club-badge">Infrastructure</span>
+                    <h3>Camp Nou Renovation Funding Updates</h3>
+                    <p>The club is acquiring secondary funding allocations beyond the original Goldman Sachs loan to compensate for budget deviations and finalize stadium renovations.</p>
+                </div>
+            </article>
+
+            <!-- Card 4 -->
+            <article class="news-card" data-category="transfers">
+                <div class="card-img-wrapper">
+                    <img src="images/alvarez.webp" alt="Julian Alvarez transfer target" onerror="this.src='images/cultural.webp'">
+                </div>
+                <div class="card-content">
+                    <span class="badge rumor-badge">Rumor</span>
+                    <h3>Targeting Julian Álvarez for Striker Role</h3>
+                    <p>Sporting director Deco has prioritized Julian Álvarez over Victor Osimhen as the long-term successor to lead the line alongside Robert Lewandowski.</p>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="company-info">
+                <p class="footer-heading">&copy; 2026 FC Barcelona Site Project</p>
+                <p>NO 10, Barcelona City, Barcelona, Spain</p>
+                <p>info@fcbarcelona.com</p>
+                <p>+233 30 123 4567</p>
+                <p>All rights reserved.</p>
+
+            </div>
+            <div class="social-media">
+                <a href="https://www.facebook.com/adentachamber" target="_blank" aria-label="Facebook"><img src="images/facebook-svgrepo-com.svg" alt="Facebook"></a>
+                <a href="https://www.twitter.com/adentachamber" target="_blank" aria-label="Twitter"><img src="images/twitter.svg" alt="Twitter"></a>
+                <a href="https://www.linkedin.com/company/adentachamber" target="_blank" aria-label="LinkedIn"><img src="images/linkedin-svgrepo-com.svg" alt="LinkedIn"></a>
+            </div>
+            <div class="student-info">
+                <p class="footer-heading">WDD 231 Final Project</p>
+                <p>William Nyemasem Osiakwan</p>
+                <p>&copy; 2026 FC Barcelona Site Project</p>
+                <p>This page was last modified on <span id="lastModified"></span></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

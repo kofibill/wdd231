@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="FC Barcelona, Official Soccer Website, Final Project, Web Front-end development">
+    <meta name="author" content="William Nyemasem Osiakwan">
+    <meta name="description" content="Final semester project for WDD231">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <meta property="og:title" content="Official Soccer Site Project for WDD231">
+    <meta property="og:description" content="This Site is about FC Barcelona and how to sign up for this soccer club">
+    <meta property="og:image" content="">
+    <meta property="og:url" content="">
+    <script src="scripts/home.js" defer></script>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/homesmall.css">
+    <link rel="stylesheet" href="styles/homelarge.css">
+    <title>Official FC Barcelona Site Project - WDD231</title>
+</head>
+<body>
+    <header>
+        <div class="logo-container" id="maincont">
+            <img src="images/barca-logo.webp" alt="" class="logo-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <span>FC Barcelona</span>
+        </div>
+        <nav class="navigation" id="mainNav">
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="transfer.html">Transfer Market and Current Affairs</a></li>
+                <li><a href="team.html">Meet the Team</a></li>
+                <li><a href="join.html">Join Us Here!</a></li>
+            </ul>
+        </nav>
+        <button class="hamburger" id="hamburgerBtn" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainNav"></button>
+    </header>
+    <main>
+        <h1>Welcome to the Official Site of FC Barcelona!</h1>
+        <figure class="hero-container">
+            <img src="images/front-banner.webp" alt="The Home Hero banner" class="hero-image">
+            <a href="" class="hero-btn">Join Us Now!</a>
+        </figure>
+
+        <h2>History</h2>
+        <div class="slideshow-container">
+            <div class="slides-column">
+                <div class="mySlides fade">
+                    <figure>
+                        <img src="images/olden players.webp" width="300px" height="200px">
+                        <figcaption>First Barca players with president</figcaption>
+                    </figure>
+                </div>
+
+                <div class="mySlides fade">
+                    <figure>
+                        <img src="images/olden match.webp" width="300px" height="200px">
+                        <figcaption>Early Barca match</figcaption>
+                    </figure>
+                </div>
+
+                <div class="mySlides fade">
+                    <figure>
+                        <img src="images/stadium.webp" width="300px" height="200px">
+                        <figcaption>Stadium Transformation</figcaption>
+                    </figure>
+                </div>
+            </div>
+            
+            <div class="text">
+                <p>
+                    FC Barcelona, founded in 1899 by a group of young foreigners living in Barcelona, was the result of the increasing popularity of football, and other British sports, across Europe.
+                    These origins have conferred upon the Club its intercultural identity, multi-sport focus and its deeply-rooted allegiance to Barcelona and Catalonia. 
+                    The foundation of the Club coincided with a time when people were becoming interested in playing sport in Catalonia; this social context and Catalonia's idiosyncratic culture led to the creation of a new model of modern leisure. 
+                    Gamper, the Club's founder, was the inspiration and driving force behind the Club's first 25 years. 
+                    His commitment to FC Barcelona went far beyond his role as player, director and president.
+                </p>
+            </div>
+        </div>
+        <section class="achievement">
+            <h3>Achievements</h3>
+            <div class="gallery-container">
+                <figure class="league">
+                    <img src="images/la-liga.webp">
+                    <figcaption>29 La Liga Titles</figcaption>
+                </figure>
+                <figure class="champions-leg">
+                    <img src="images/ucltrophy.webp">
+                    <figcaption>5 Champions League Titles</figcaption>
+                </figure>
+                <figure class="copadelrey">
+                    <img src="images/Spanish-Cup.webp">
+                    <figcaption>32 Copa Del Rey Titles</figcaption>
+                </figure>
+                <figure class="supacopa">
+                    <img src="images/supercopa.webp">
+                    <figcaption>16 Supa Copa Titles</figcaption>
+                </figure>
+                <figure class="clubworld-cup">
+                    <img src="images/Fifa-Club-World-Cup.webp">
+                    <figcaption>3 Club World Cup Titles</figcaption>
+                </figure>
+                <figure class="european-cup">
+                    <img src="images/European-Super-Cup.webp">
+                    <figcaption>5 European Super Cup</figcaption>
+                </figure>
+            </div>
+        </section>
+        <section class="culture">
+            <h4>Culture</h4>
+            <figure>
+                <img src="images/cultural.webp">
+            </figure>
+            <p>
+                FC Barcelona's identity is defined by its famous Catalan motto, "Més que un club" (More than a club), which positions the team as a powerful symbol of Catalan nationalism, democracy, and cultural pride. 
+                Unlike most modern sports franchises, the club is owned entirely by its registered members (socis) rather than wealthy corporations, fostering a deep community-driven spirit. 
+                On the pitch, this culture is expressed through Masia, their world-renowned youth academy, which instills a commitment to an attacking, possession-based style of play known as "tiki-taka." 
+                This fusion of local heritage, democratic ownership, and a distinct football philosophy transforms the club from a mere sports team into a profound social and cultural institution.
+            </p>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="company-info">
+                <p class="footer-heading">&copy; 2026 FC Barcelona Site Project</p>
+                <p>NO 10, Barcelona City, Barcelona, Spain</p>
+                <p>info@fcbarcelona.com</p>
+                <p>+233 30 123 4567</p>
+                <p>All rights reserved.</p>
+
+            </div>
+            <div class="social-media">
+                <a href="https://www.facebook.com/adentachamber" target="_blank" aria-label="Facebook"><img src="images/facebook-svgrepo-com.svg" alt="Facebook"></a>
+                <a href="https://www.twitter.com/adentachamber" target="_blank" aria-label="Twitter"><img src="images/twitter.svg" alt="Twitter"></a>
+                <a href="https://www.linkedin.com/company/adentachamber" target="_blank" aria-label="LinkedIn"><img src="images/linkedin-svgrepo-com.svg" alt="LinkedIn"></a>
+            </div>
+            <div class="student-info">
+                <p class="footer-heading">WDD 231 Final Project</p>
+                <p>William Nyemasem Osiakwan</p>
+                <p>&copy; 2026 FC Barcelona Site Project</p>
+                <p>This page was last modified on <span id="lastModified"></span></p>
+            </div>
+        </div>
+        
+    </footer>
+</body>
+</html>

@@ -1,0 +1,68 @@
+@media (min-width: 640px) {
+    /* Styles for larger screens (desktop) */
+    :root {
+    --fc-blue: #004d98;      /* Deep Blue */
+    --fc-maroon: #a50044;    /* Burgundy/Maroon */
+    --fc-gold: #edbb00;      /* Accent Gold */
+    --fc-dark: #111111;      /* Deep Black/Gray */
+    --fc-light: #f4f4f4;     /* Light Gray Background */
+    --white: #ffffff;
+    }
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    header{
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px;
+    }
+    nav.navigation{
+        display: block;
+    }
+    .navigation ul {
+        display: flex;
+        gap: 20px;          /* Adds space between your links */
+        list-style: none;   /* Removes the default bullet points */
+        margin: 0;
+        padding: 0;
+    }
+    .navigation a {
+        display: inline-block; /* Overrides the mobile 'display: none' */
+        color: #333;           /* Changes color to dark text so it's readable */
+        text-decoration: none;
+        font-weight: bold;
+    }
+    header span{
+        text-align:left;
+        margin-left: 10px;
+    }
+    #hamburgerBtn{
+        display: none;
+    }
+
+    .news-gallery {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    .footer-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 20px;
+        text-align: left;
+    }
+    .social-media {
+        align-self: center;
+        margin-left: auto;
+    }
+    .student-info {
+        margin-left: 20px;
+    }
+    .student-info h5, .student-info p{
+        text-align: left;
+    }
+}
