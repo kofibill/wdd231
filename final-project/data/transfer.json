@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "title": "Anthony Gordon Signs with Barça",
+        "description": "La Blaugrana have officially completed the massive signing of Anthony Gordon from Newcastle United for a fee of £80M. The English winger is already has long been a fan of Barcelona and is excited to be here.",
+        "category": "transfers",
+        "image": "gordon.webp"
+    },
+    {
+        "id": 2,
+        "title": "Rashford Loan Decision Looming",
+        "description": "Reports show Barça may decline the $35M permanent buy option for Marcus Rashford. A secondary loan extension from Manchester United is currently being evaluated.",
+        "category": "transfers",
+        "image": "rashford.webp"
+    },
+    {
+        "id": 3,
+        "title": "Camp Nou Renovation Funding Updates",
+        "description": "The club is acquiring secondary funding allocations beyond the original Goldman Sachs loan to compensate for budget deviations and finalize stadium renovations.",
+        "category": "club",
+        "image": "stadium.webp"
+    },
+    {
+        "id": 4,
+        "title": "Targeting Julian Álvarez for Striker Role",
+        "description": "Sporting director Deco has prioritized Julian Álvarez over Victor Osimhen as the long-term successor to lead the line alongside Robert Lewandowski.",
+        "category": "transfers",
+        "image": "alvarez.webp"
+    }
+]

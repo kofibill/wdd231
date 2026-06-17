@@ -17,6 +17,7 @@ header{
     display: flex;
     position: relative;
     justify-content: space-between;
+    align-items: center;
     padding: 15px;
 }
 header::after{
@@ -31,9 +32,14 @@ header::after{
   /* Optional: allows you to round the edges of the border */
   border-radius: 10px; 
 }
+.logo-container {
+    display: flex;
+    align-items: center; 
+    gap: 10px; /* Adds spacing between the image and the text */
+}
 .logo-container img{
-    width: 50px;
-    height: 50px;
+    width: 80px;
+    height: 80px;
 }
 .logo-container span{
     font-size: 1.2rem;
@@ -146,6 +152,27 @@ h3{
 h4{
     text-align: center;
     color: var(--fc-blue);
+}
+#banner-container {
+    background-color: #e3f2fd;
+    color: var(--fc-red);
+    padding: 15px;
+    margin-bottom: 20px;
+    border-left: 5px solid #2196f3;
+    border-radius: 4px;
+    position: relative;
+}
+#close-banner {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #0d47a1
 }
 /* Slideshow container */
 .slideshow-container {
