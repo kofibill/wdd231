@@ -154,7 +154,8 @@ body.barca-theme {
 }
 
 .filter-btn {
-    background-color: #eee;
+    background-color: var(--fc-blue);
+    color: var(--white);
     border: none;
     padding: 10px 18px;
     font-weight: 600;
@@ -165,8 +166,8 @@ body.barca-theme {
 }
 
 .filter-btn.active, .filter-btn:hover {
-    background-color: var(--barca-blue);
-    color: #ffffff;
+    background-color: var(--fc-maroon);
+    color: var(--white);
 }
 
 /* Rounded Cards Styling */
