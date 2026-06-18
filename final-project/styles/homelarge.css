@@ -33,6 +33,7 @@
     }
     .navigation a {
         display: inline-block; /* Overrides the mobile 'display: none' */
+        background-color: var(--white);
         color: #333;           /* Changes color to dark text so it's readable */
         text-decoration: none;
         font-weight: bold;
@@ -45,7 +46,6 @@
     #hamburgerBtn{
         display: none;
     }
-
     main {
         background-color: #ffffff;   
         color: var(--fc-maroon);          /* Background color to show off the boundaries */

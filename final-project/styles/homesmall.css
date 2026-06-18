@@ -81,6 +81,7 @@ nav.navigation.open a {
 .navigation a{
     display: none;
     color: white;
+    background-color: var(--fc-blue);
     text-decoration: none;
     padding: 10px;
     text-align: center;
@@ -90,8 +91,8 @@ nav.navigation.open a {
 }
 
 .navigation a:hover {
-	background-color: #bbb;
-	color: #333;
+	background-color: var(--fc-maroon);
+	color: var(--fc-light);
 	font-weight: 700;
 }
 .hero-container {
@@ -204,10 +205,7 @@ h4{
   animation-name: fade;
   animation-duration: 5.5s;
 }
-.mySlides fade img{
-    width: 300px;
-    height: 200px;
-}
+
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}

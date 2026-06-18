@@ -32,6 +32,7 @@
     .navigation a {
         display: inline-block; /* Overrides the mobile 'display: none' */
         color: #333;           /* Changes color to dark text so it's readable */
+        background-color: var(--fc-light);
         text-decoration: none;
         font-weight: bold;
     }
@@ -41,6 +42,17 @@
     }
     #hamburgerBtn{
         display: none;
+    }
+    main {
+        background-color: #ffffff;   
+        color: var(--fc-maroon);          /* Background color to show off the boundaries */
+        border-radius: 16px;                   /* Rounds all four corners of the main section */
+        padding: 20px;                         /* Keeps content from pressing against the rounded edges */
+        margin: 20px auto;                     /* Adds spacing from the header/footer and centers it */
+        max-width: 1200px;                     /* Limits layout expansion on extra wide screens */
+        width: 90%;                            /* Leaves breathing room on mobile screen edges */
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.747);/* Adds depth to make the container pop */
+        overflow: hidden; 
     }
     #player-container{
         display: grid;

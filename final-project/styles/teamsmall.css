@@ -6,9 +6,6 @@
     --fc-light: #f4f4f4;     /* Light Gray Background */
     --white: #ffffff;
 }
-body{
-    font-family: Montserrat;
-}
 *{
     margin: 0;
     padding: 0;
@@ -47,7 +44,7 @@ header::after{
 .logo-container span{
     font-size: 1.2rem;
     font-weight: bold;
-    color:var(--fc-blue);
+    color:var(--fc-maroon);
 }
 nav{
     display: none;
@@ -83,7 +80,8 @@ nav.navigation.open a {
 }
 .navigation a{
     display: none;
-    color: var(--fc-blue);
+    color: white;
+    background-color: var(--fc-blue);
     text-decoration: none;
     padding: 10px;
     text-align: center;
